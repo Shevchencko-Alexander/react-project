@@ -1,0 +1,38 @@
+$tabBorderRadius: 20px;
+$tabBorder: 2px solid rgba(81, 210, 249, 0.63);
+
+.container {
+   position: absolute;
+   display: flex;
+   top: -25px;
+   left: 15px;
+}
+
+.tab {
+   padding: 5px 10px;
+   border-top-left-radius: $tabBorderRadius;
+   border-top-right-radius: $tabBorderRadius;
+   letter-spacing: 1px;
+   background-color: bisque;
+   white-space: nowrap;
+   margin: 0 auto;
+   border: $tabBorder;
+   border-bottom: none;
+   cursor: pointer;
+   transition: all 0.8s ease;
+
+   &__active {
+      border-bottom: $tabBorder;
+   }
+
+   &:hover {
+      background-color: rgba(81, 210, 249, 0.63);
+   }
+}
+
+.name {
+   &__active {
+      color: red;
+      font-weight: 700;
+   }
+}

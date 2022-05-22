@@ -1,0 +1,14 @@
+.container {
+   background-color: bisque;
+   padding: 20px;
+   margin: 20px auto;
+   overflow: auto;
+   scroll-behavior: smooth;
+   border-radius: 20px;
+   max-height: 460px;
+   width: 800px;
+
+   & :last-child {
+      margin-bottom: 0;
+   }
+}

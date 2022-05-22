@@ -1,0 +1,78 @@
+$HFBorderRadius: 30px;
+$mainFontSize: 24px;
+$mainLetterSpacing: 1.5px;
+$mainFontWeight: 700;
+$mainTextColor: rgb(104, 25, 177);
+
+@mixin link() {
+   font-weight: $mainFontWeight;
+   padding: 5px;
+   letter-spacing: $mainLetterSpacing;
+   border-radius: 10px;
+   font-size: $mainFontSize;
+   transition: all 0.8s ease;
+   @content;
+
+   &:hover {
+      box-shadow: 3px 3px 10px black;
+   }
+}
+
+@mixin headerFooter() {
+   background-color: rgba(81, 210, 249, 0.63);
+   height: 70px;
+   padding-top: 22px;
+   @content;
+}
+
+.header {
+   @include headerFooter() {
+      border-bottom-left-radius: $HFBorderRadius;
+      border-bottom-right-radius: $HFBorderRadius;
+   }
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+.text {
+   text-align: center;
+   font-weight: $mainFontWeight;
+   letter-spacing: $mainLetterSpacing;
+   font-size: $mainFontSize;
+   color: $mainTextColor;
+}
+
+.footer {
+   @include headerFooter() {
+      border-top-left-radius: $HFBorderRadius;
+      border-top-right-radius: $HFBorderRadius;
+   }
+}
+
+.list {
+   max-width: 440px;
+   margin: 0 auto;
+
+   & li {
+      display: inline;
+      margin-right: 50px;
+   }
+
+   & :last-child {
+      margin-right: 0;
+   }
+}
+
+.link {
+   @include link() {
+      color: $mainTextColor;
+   }
+}
+
+.active {
+   @include link() {
+      color: red;
+   }
+}

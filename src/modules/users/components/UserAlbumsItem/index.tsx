@@ -1,0 +1,1 @@
+export { UserAlbumsItem } from './UserAlbumsItem';
