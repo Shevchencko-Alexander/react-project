@@ -1,0 +1,25 @@
+$mainBorderRadius: 20px;
+
+.container {
+   margin: 20px;
+   padding: 20px 0;
+   background-color: bisque;
+   border-radius: $mainBorderRadius;
+}
+
+.title {
+   font-size: 24px;
+   font-weight: 700;
+   letter-spacing: 1.5px;
+   text-align: center;
+}
+
+.text {
+   margin: 20px;
+   line-height: 2;
+   letter-spacing: 1px;
+   background-color: rgba(81, 210, 249, 0.63);
+   box-shadow: 3px 3px 5px black;
+   border-radius: $mainBorderRadius;
+   padding: 20px;
+}

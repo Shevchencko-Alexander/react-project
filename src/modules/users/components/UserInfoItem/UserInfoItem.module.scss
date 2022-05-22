@@ -1,0 +1,26 @@
+.item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   padding: 10px;
+   border-radius: 20px;
+   letter-spacing: 1px;
+   background-color: rgba(81, 210, 249, 0.63);
+   box-shadow: 3px 3px 5px black;
+}
+
+.icon {
+   height: 20px;
+   margin-right: 20px;
+}
+
+.text {
+   font-size: 18px;
+   line-height: 1.3;
+   margin-bottom: 5px;
+}
+
+.name {
+   font-weight: 700;
+   color: rgb(104, 25, 177);
+}

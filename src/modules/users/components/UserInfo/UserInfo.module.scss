@@ -1,0 +1,19 @@
+$mainBorderRadius: 20px;
+
+.image {
+   height: 120px;
+   border-radius: $mainBorderRadius;
+   display: block;
+   margin: 0 auto;
+}
+
+.item {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   padding: 10px;
+   border-radius: $mainBorderRadius;
+   letter-spacing: 1px;
+   background-color: rgba(81, 210, 249, 0.63);
+   box-shadow: 3px 3px 5px black;
+}

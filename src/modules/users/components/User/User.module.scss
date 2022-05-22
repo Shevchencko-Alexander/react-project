@@ -1,0 +1,45 @@
+$mainBoxShadow: 3px 3px 5px black;
+
+.container {
+   width: 440px;
+   padding: 20px;
+   margin: 0 100px 20px;
+   background-color: rgba(81, 210, 249, 0.63);
+   border-radius: 20px;
+   box-shadow: $mainBoxShadow;
+   display: flex;
+   align-items: center;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+
+   & :first-child {
+      margin-top: 0;
+   }
+}
+
+.text {
+   margin-top: 15px;
+   letter-spacing: 1px;
+}
+
+.link {
+   color: rgb(104, 25, 177);
+   font-weight: 700;
+   border-radius: 10px;
+   padding: 5px 0;
+   transition: all 0.8s ease;
+
+   &:hover {
+      box-shadow: $mainBoxShadow;
+   }
+}
+
+.image {
+   height: 80px;
+   width: 90px;
+   border-radius: 50%;
+}

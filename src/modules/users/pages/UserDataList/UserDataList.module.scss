@@ -1,0 +1,24 @@
+$mainBorderRadius: 20px;
+
+.popup {
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.36);
+   border-radius: $mainBorderRadius;
+   padding: 20px;
+   margin-left: 100px;
+   width: 1200px;
+   height: 800px;
+}
+
+.container {
+   position: relative;
+   margin: 0 auto;
+   padding: 10px;
+   border-radius: $mainBorderRadius;
+   background-color: bisque;
+   max-width: 800px;
+
+   & :last-child {
+      margin-bottom: 0;
+   }
+}
